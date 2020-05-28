@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "extends": [
+      "airbnb"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.test.js",
+          "**/*.test.jsx"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ],
+    "plugins": [
+    ],
+    "rules": {
+      "no-console": ["error", { "allow": ["warn", "error", "log"] }],
+      "no-plusplus": 0,
+      "prefer-destructuring": 0,
+      "func-names": 0
+
+    }
+}
