@@ -6,8 +6,8 @@ This app gets the fibonacci number
 App uses a open source projects to work properly:
 * [create-react-app](https://create-react-app.dev/) - HTML enhanced for web apps!
 * [axios](https://github.com/axios/axios) - promise based HTTP client for the browser and node.js
-* [node.js] - evented I/O for the backend
-* [express] - fast node.js network app 
+* [node.js](https://nodejs.org/en/) - evented I/O for the backend
+* [express](https://expressjs.com/ru/) - fast node.js network app 
 * [sequelize](https://sequelize.org/) - promise-based Node.js ORM for  MySQL
 
 
