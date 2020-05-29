@@ -10,7 +10,7 @@ const router = Router();
 router.post(
   '/send',
   [
-    check('order', 'Некорректное число'),
+    check('order', 'Некорректное число').custom((value) => value > 0),
   ],
   async (req, res) => {
     try {

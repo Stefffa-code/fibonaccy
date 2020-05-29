@@ -1,3 +1,8 @@
 .git
 dist
 node_modules
+client
+.vscode
+.dockerignore
+Dockerfile
+Dockerfile.prod

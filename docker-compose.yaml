@@ -2,11 +2,14 @@ version: '3'
 
 services:  
   client:
-    build: "./client"
     container_name: front 
+    build: "./client"    
     tty: true
     volumes:
       - "./client"
+    volumes:
+      - './client:/fb-front'
+      - '/fb-front/node_modules'
     ports:
       - "3000:3000"
     depends_on:
@@ -17,7 +20,8 @@ services:
     build: "."
     container_name: api 
     volumes:
-      - "./api"
+      - '.:/fb-back'
+      - '/fb-back/node_modules'
     ports:
       - "5000:5000"
     depends_on:

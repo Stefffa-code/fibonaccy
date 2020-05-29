@@ -1,6 +1,6 @@
 const express = require('express');
 const config = require('config');
-const sequelize = require('./database/db');
+const sequelize = require('./api/database/db');
 
 const app = express();
 const PORT = config.get('port') || 5000;
@@ -21,8 +21,8 @@ app.use((req, res, next) => {
   });
 });
 
-app.use('/api/fibonacci', require('./routes/fib.routes'));
-app.use('/api/history', require('./routes/history.routes'));
+app.use('/api/fibonacci', require('./api/routes/fib.routes'));
+app.use('/api/history', require('./api/routes/history.routes'));
 
 
 async function start() {
